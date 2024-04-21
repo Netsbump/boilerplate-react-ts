@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "pkief.material-icon-theme",
+    "yoavbls.pretty-ts-errors"
+  ]
+}

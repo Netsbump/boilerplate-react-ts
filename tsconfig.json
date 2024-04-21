@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Définit la version cible du JavaScript après la compilation (ES2020)
+    "useDefineForClassFields": true, // Utilise la sémantique de champ de classe basée sur defineProperty dans les classes ES6
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Librairies de types incluses dans la compilation
+    "module": "ESNext", // Spécifie le module de code généré, ici ESNext pour la dernière spécification
+    "skipLibCheck": true, // Ignore les vérifications de types pour les fichiers de déclaration (.d.ts)
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // Mode de résolution de modules optimisé pour les bundlers comme Webpack ou Rollup
+    "allowImportingTsExtensions": true, // Permet d'importer des fichiers avec des extensions .ts
+    "resolveJsonModule": true, // Permet l'importation de fichiers JSON
+    "isolatedModules": true, // Transpile chaque fichier comme un module séparé (comme transpilation sous Babel)
+    "noEmit": true, // Désactive la génération de fichiers JavaScript, utile lors de l'utilisation de Babel ou d'un bundler
+    "jsx": "react-jsx", // Définit comment JSX est traité, ici transformé en appels à la fonction React
+
+    /* Linting */
+    "strict": true, // Active toutes les options strictes de vérification de type
+    "noUnusedLocals": true, // Signale une erreur si des variables locales ne sont pas utilisées
+    "noUnusedParameters": true, // Signale une erreur si des paramètres de fonction ne sont pas utilisés
+    "noFallthroughCasesInSwitch": true // Empêche le passage de cas dans les instructions switch sans utiliser 'break'
+  },
+  "include": ["eslintrc.cjs", "src"], // Dossiers et fichiers à inclure dans le processus de compilation
+  "references": [{ "path": "./tsconfig.node.json" }] // Permet la configuration du projet en plusieurs tsconfigs référant les uns aux autres
+}
