@@ -100,11 +100,9 @@ Pour démarrer avec ce boilerplate, suivez les étapes ci-dessous pour installer
   
 1. _Prérequis_
 
-- Assurez-vous d'avoir Node.js installé sur votre machine. Pour ce faire, téléchargez la dernière version LTS de Node.js depuis ce lien : [télécharger Node.js](https://nodejs.org/fr/download).
+- Assurez-vous d'avoir Node.js installé sur votre machine. Vite.js requiert au moins la version `18.0.0` de Node.js. Vous pouvez télécharger la dernière version LTS ou actuelle de Node.js depuis ce lien : [télécharger Node.js](https://nodejs.org/fr/download).
 
-- Vite.js nécessite une version récente de Node.js, donc vérifiez la [compatibilité de Vite.js](https://vitejs.dev/guide/#browser-support) avant de continuer. En cas de doute, un message dans le terminal vous indiquera si une mise à jour de Vite est nécessaire lors du lancement du développement.
-
-Confirmez son installation en tapant :
+- Pour vérifier la version de Node.js installée sur votre système, exécutez la commande suivante dans votre terminal :
 
 ```sh
 node -v
